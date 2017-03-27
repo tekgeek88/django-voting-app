@@ -10,10 +10,21 @@
         <ul>
             {% for question in latest_question_list %}
             <li>
+<<<<<<< HEAD
                 <!-- <a href="/polls/{{ question.id }}/">{{ question.question_text }}</a> -->
                 <!-- <a href="{% url 'detail' question.id %}">{{ question.question_text }}</a> -->
                 <!-- Added name spacing -->
                 <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+=======
+<<<<<<< HEAD
+                <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+=======
+                <a href="/polls/{{ question.id }}/">{{ question.question_text }}</a>
+                <!--<a href="{% url 'detail' question.id %}">{{ question.question_text }}</a> -->
+                <!-- Added name spacing -->
+                <!-- <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a> -->
+>>>>>>> tutorial-part-4
+>>>>>>> parent of a7e6d2a... Fixed html comments that prevented the polls page from loading
 
             </li>
             {% endfor %}
