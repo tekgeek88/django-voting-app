@@ -11,6 +11,7 @@
             {% for question in latest_question_list %}
             <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <!-- <a href="/polls/{{ question.id }}/">{{ question.question_text }}</a> -->
                 <!-- <a href="{% url 'detail' question.id %}">{{ question.question_text }}</a> -->
                 <!-- Added name spacing -->
@@ -26,6 +27,9 @@
 >>>>>>> tutorial-part-4
 >>>>>>> parent of a7e6d2a... Fixed html comments that prevented the polls page from loading
 
+=======
+                <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+>>>>>>> master
             </li>
             {% endfor %}
         </ul>
